@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bluetech - Digital Solutions for Modern Businesses | MERN Stack, QuickBooks, Web Design</title>
+  <meta name="description" content="Bluetech delivers modern websites, MERN stack web applications, QuickBooks integration, and tailored UI/UX web designing to help your business grow.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Bluetech Home">
+        <img src="images/logo.jpg" alt="Bluetech Logo" class="brand-logo-img">
+        <span class="brand-text">Blue<span>tech</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links (Strictly no projects/work link) -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#why-us" class="nav-link">About</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="nav-actions">
+        <button class="btn btn-outline" data-action="open-ai" style="padding: 9px 16px; font-size: 0.875rem;">
+          <i class="fas fa-robot" style="color: var(--primary);"></i> Talk to AI
+        </button>
+        <a href="#contact" class="btn btn-whatsapp" data-wa-action="chat" data-wa-service="general">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp &rarr;
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-sparkles"></i> Digital Solutions for Modern Businesses
+        </div>
+        <h1 class="hero-title">
+          Build Your Digital Future with <span class="highlight">Bluetech</span>
+        </h1>
+        <p class="hero-desc">
+          We create modern websites, powerful web applications, and custom digital solutions to help your business grow and stand out in the digital world.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-wa-action="chat" data-wa-service="general">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp &rarr;
+          </a>
+          <button class="btn btn-outline" data-action="open-ai">
+            <i class="fas fa-robot" style="color: var(--primary);"></i> Ask Bluetech AI
+          </button>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Send an Inquiry
+          </a>
+        </div>
+
+        <!-- 4 Core Feature Highlights -->
+        <div class="hero-features">
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fas fa-microchip"></i></div>
+            <div class="hero-feature-text">Modern Technology</div>
+          </div>
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="hero-feature-text">Creative Design</div>
+          </div>
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fas fa-shield-halved"></i></div>
+            <div class="hero-feature-text">Reliable Support</div>
+          </div>
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fas fa-clock"></i></div>
+            <div class="hero-feature-text">On-Time Delivery</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Device Mockup / Showcase Stage -->
+      <div class="hero-showcase">
+        <div class="showcase-stage">
+          <!-- Floating UI Chips -->
+          <div class="floating-chip chip-1">
+            <i class="fas fa-code"></i> Custom Development
+          </div>
+          <div class="floating-chip chip-2">
+            <i class="fas fa-wand-magic-sparkles"></i> Modern UI/UX
+          </div>
+          <div class="floating-chip chip-3">
+            <i class="fas fa-bolt"></i> Fast & Secure
+          </div>
+
+          <!-- Stylized Laptop Mockup Screen -->
+          <div class="showcase-laptop">
+            <div class="laptop-header">
+              <span class="laptop-dot red"></span>
+              <span class="laptop-dot yellow"></span>
+              <span class="laptop-dot green"></span>
+            </div>
+            <div class="laptop-screen-content">
+              <div class="laptop-hero-preview">
+                <div class="preview-nav">
+                  <div class="preview-logo">
+                    <i class="fas fa-cube"></i> Bluetech App
+                  </div>
+                  <span class="preview-badge">Live System</span>
+                </div>
+                <div class="preview-hero-mock">
+                  <h4>Better Solutions for Your Business</h4>
+                  <p>Scalable web applications, QuickBooks integration, and bespoke UI engineering.</p>
+                </div>
+                <div class="preview-cards-mock">
+                  <div class="mock-card">
+                    <i class="fab fa-react"></i>
+                    <span>MERN Stack</span>
+                  </div>
+                  <div class="mock-card">
+                    <i class="fas fa-calculator"></i>
+                    <span>QuickBooks</span>
+                  </div>
+                  <div class="mock-card">
+                    <i class="fas fa-palette"></i>
+                    <span>UI/UX Design</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Services Section ("What We Do")
+       Strictly NO pricing, featuring QuickBooks, MERN, Web Design, Custom Web
+       ========================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Services</span>
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-desc">
+          From custom web applications to QuickBooks management and modern design, we offer a dedicated range of digital services to bring your ideas to life.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: MERN Stack Development -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fab fa-react"></i>
+          </div>
+          <h3 class="service-title">MERN Stack Development</h3>
+          <p class="service-desc">
+            Powerful web applications engineered using MongoDB, Express.js, React, and Node.js. Fast, secure, scalable, and tailored to your workflows.
+          </p>
+          <ul class="service-features-list">
+            <li><i class="fas fa-check"></i> Custom REST & GraphQL APIs</li>
+            <li><i class="fas fa-check"></i> Dynamic Single-Page Applications</li>
+            <li><i class="fas fa-check"></i> High-Performance Node Backends</li>
+          </ul>
+          <a href="#contact" class="service-cta-link" data-wa-action="chat" data-wa-service="mern">
+            Consult on WhatsApp &rarr;
+          </a>
+        </div>
+
+        <!-- Service 2: Web Designing -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3 class="service-title">Web Designing & UI/UX</h3>
+          <p class="service-desc">
+            User-friendly, modern interfaces designed to elevate your company brand and convert visitors into loyal clients through intuitive experiences.
+          </p>
+          <ul class="service-features-list">
+            <li><i class="fas fa-check"></i> Responsive Mobile-First Design</li>
+            <li><i class="fas fa-check"></i> Clean, High-Conversion UI/UX</li>
+            <li><i class="fas fa-check"></i> Interactive Prototypes in Figma</li>
+          </ul>
+          <a href="#contact" class="service-cta-link" data-wa-action="chat" data-wa-service="web-design">
+            Consult on WhatsApp &rarr;
+          </a>
+        </div>
+
+        <!-- Service 3: QuickBooks Solutions & Integration -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <h3 class="service-title">QuickBooks Solutions</h3>
+          <p class="service-desc">
+            Seamless QuickBooks setup, financial synchronization, and custom API integration to automate your invoicing and bookkeeping workflows.
+          </p>
+          <ul class="service-features-list">
+            <li><i class="fas fa-check"></i> Automated Invoicing Workflows</li>
+            <li><i class="fas fa-check"></i> QuickBooks Online API Sync</li>
+            <li><i class="fas fa-check"></i> Custom Financial Dashboards</li>
+          </ul>
+          <a href="#contact" class="service-cta-link" data-wa-action="chat" data-wa-service="quickbooks">
+            Consult on WhatsApp &rarr;
+          </a>
+        </div>
+
+        <!-- Service 4: Custom Web Solutions -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="service-title">Custom Web Solutions</h3>
+          <p class="service-desc">
+            Tailored software and business websites built to solve unique challenges, improve operational efficiency, and deliver sustainable digital growth.
+          </p>
+          <ul class="service-features-list">
+            <li><i class="fas fa-check"></i> Corporate Business Websites</li>
+            <li><i class="fas fa-check"></i> Speed Optimization & SEO Ready</li>
+            <li><i class="fas fa-check"></i> Dedicated Maintenance & Support</li>
+          </ul>
+          <a href="#contact" class="service-cta-link" data-wa-action="chat" data-wa-service="custom-web">
+            Consult on WhatsApp &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Why Bluetech Section
+       ========================================================================== -->
+  <section class="why-section" id="why-us">
+    <div class="container">
+      <div class="why-grid">
+        <!-- Left: Code & Technology Card -->
+        <div class="why-tech-card">
+          <div>
+            <div class="code-mockup-header">
+              <span class="laptop-dot red"></span>
+              <span class="laptop-dot yellow"></span>
+              <span class="laptop-dot green"></span>
+              <span style="font-size:0.75rem; color:#64748b; margin-left:8px;">Bluetech.engine.js</span>
+            </div>
+            <div class="code-snippet">
+              <span class="comment">// Delivering dependable results</span><br>
+              <span class="keyword">const</span> <span class="func">deployDigitalGrowth</span> = (<span class="str">client</span>) =&gt; {<br>
+              &nbsp;&nbsp;<span class="keyword">return</span> {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;stack: [<span class="str">'React'</span>, <span class="str">'Node.js'</span>, <span class="str">'MongoDB'</span>],<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;quickbooksApi: <span class="keyword">true</span>,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;performance: <span class="str">'Optimized'</span>,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;status: <span class="str">'Production Ready'</span><br>
+              &nbsp;&nbsp;};<br>
+              };
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.75rem; color: #94a3b8; margin-bottom: 8px; font-weight:600;">BUILT WITH MODERN STACKS:</div>
+            <div class="tech-pills-row">
+              <span class="tech-pill"><i class="fab fa-react"></i> React</span>
+              <span class="tech-pill"><i class="fab fa-node-js"></i> Node.js</span>
+              <span class="tech-pill"><i class="fas fa-database"></i> MongoDB</span>
+              <span class="tech-pill"><i class="fas fa-file-invoice"></i> QuickBooks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Value Points -->
+        <div class="why-center-content">
+          <span class="section-subtitle">Why Bluetech?</span>
+          <h2 class="section-title">You bring the idea.<br>We build the digital product.</h2>
+          <p class="why-lead">
+            At Bluetech, we focus on quality, creativity, and long-term partnerships. We don't just build websites — we build solutions that help your business grow.
+          </p>
+
+          <div class="why-points-list">
+            <div class="why-point-item">
+              <div class="why-point-icon"><i class="fas fa-users-gear"></i></div>
+              <div class="why-point-text">
+                <h4>Experienced Team</h4>
+                <p>Skilled, passionate developers and designers dedicated to clean craftsmanship.</p>
+              </div>
+            </div>
+
+            <div class="why-point-item">
+              <div class="why-point-icon"><i class="fas fa-hand-holding-heart"></i></div>
+              <div class="why-point-text">
+                <h4>Client Focused</h4>
+                <p>Your goals and timelines are always our highest operational priority.</p>
+              </div>
+            </div>
+
+            <div class="why-point-item">
+              <div class="why-point-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="why-point-text">
+                <h4>Scalable Solutions</h4>
+                <p>Architected thoughtfully so your digital assets can scale smoothly as you expand.</p>
+              </div>
+            </div>
+
+            <div class="why-point-item">
+              <div class="why-point-icon"><i class="fas fa-headset"></i></div>
+              <div class="why-point-text">
+                <h4>Ongoing Support</h4>
+                <p>We remain right beside you even after launch to guarantee smooth operations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Action Prompt Card -->
+        <div class="why-cta-card">
+          <div class="why-cta-logo-wrap">
+            <img src="images/logo.jpg" alt="Bluetech Emblems">
+          </div>
+          <h3>Let's turn your ideas into <span>real digital solutions.</span></h3>
+          <p>Have questions about your project or need an expert opinion? Reach out directly.</p>
+          <a href="#contact" class="btn btn-whatsapp" data-wa-action="chat" data-wa-service="general">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp &rarr;
+          </a>
+          <span class="handwritten-note">~ We're just a message away!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Process Section ("How We Work")
+       ========================================================================== -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Process</span>
+        <h2 class="section-title">How We Work</h2>
+        <p class="section-desc">
+          A clear, polite, and transparent process to turn your ideas into a reliable reality.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-num-badge">01</div>
+          <h3 class="process-step-title">Tell Us Your Idea</h3>
+          <p class="process-step-desc">Share your requirements, workflow goals, and vision with our team.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-num-badge">02</div>
+          <h3 class="process-step-title">Get Your Plan</h3>
+          <p class="process-step-desc">We discuss the best architecture, technical roadmap, and schedule.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-num-badge">03</div>
+          <h3 class="process-step-title">We Build</h3>
+          <p class="process-step-desc">We design and develop your solution with regular updates and feedback.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-num-badge">04</div>
+          <h3 class="process-step-title">Launch</h3>
+          <p class="process-step-desc">You receive your fully tested product with comprehensive launch support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Testimonials Section
+       ========================================================================== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Testimonials</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-desc">
+          We value our clients, and their trust and success mean everything to us.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "Bluetech delivered an outstanding web application for our business. The team was highly professional, responsive, and easy to work with. Highly recommended!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AR</div>
+            <div class="author-info">
+              <h5>Ahmed Raza</h5>
+              <span>Business Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "Their UI/UX design skills and attention to detail are exceptional. Our clients love the modern feel of the new platform. A genuinely great experience working with Bluetech!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div class="author-info">
+              <h5>Sara Khan</h5>
+              <span>Founder</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-quote">
+            "The QuickBooks integration and custom software they built streamlined our financial operations and saved countless hours every week. Truly impactful work."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ZA</div>
+            <div class="author-info">
+              <h5>Zain Ali</h5>
+              <span>CEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact & Email System Section (Backend Connected)
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Direct Contact Info Card -->
+        <div class="contact-info-card">
+          <h3>Get In Touch</h3>
+          <p>
+            Have a project in mind or want to consult on the best technical solution for your business? We are always pleased to assist you.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <h6>WhatsApp Direct</h6>
+                <a href="#contact" data-wa-action="chat" data-wa-service="general">+92 300 1234567</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h6>Official Email</h6>
+                <a href="mailto:hello@bluetech.com">hello@bluetech.com</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <h6>Location</h6>
+                <span>Karachi, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="direct-wa-box">
+            <h5>Instant WhatsApp Assistance</h5>
+            <p>Skip the forms and message our development lead directly on WhatsApp.</p>
+            <a href="#contact" class="btn" data-wa-action="chat" data-wa-service="general">
+              <i class="fab fa-whatsapp"></i> Open WhatsApp Chat
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact & Inquiry Form -->
+        <div class="contact-form-wrap">
+          <div class="form-header">
+            <h3>Send an Inquiry</h3>
+            <p>Fill out the form below and our team will get back to you promptly.</p>
+          </div>
+
+          <div id="formStatus" class="form-status"></div>
+
+          <form id="inquiryForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" class="form-control" placeholder="e.g. John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" class="form-control" placeholder="e.g. john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp Number</label>
+                <input type="tel" id="phone" class="form-control" placeholder="e.g. +92 300 1234567">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" class="form-control">
+                  <option value="Websites with MERN Stack">Websites with MERN Stack</option>
+                  <option value="Web Designing & UI/UX">Web Designing & UI/UX</option>
+                  <option value="QuickBooks Solutions">QuickBooks Solutions & Integration</option>
+                  <option value="Custom Web Solutions">Custom Web Development</option>
+                  <option value="General Consultation">General Digital Consultation</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details / Requirements *</label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Briefly describe what you would like to build or automate..." required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn btn-primary" style="align-self: flex-start; padding: 13px 28px;">
+              <i class="fas fa-paper-plane"></i> Submit Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Pre-Footer CTA Banner
+       ========================================================================== -->
+  <section class="pre-footer-cta">
+    <div class="container">
+      <div class="cta-banner-content">
+        <div class="cta-banner-text">
+          <div class="cta-banner-icon">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          <div>
+            <h3>Have a project in mind?</h3>
+            <p>Let's discuss your ideas and build something amazing together.</p>
+          </div>
+        </div>
+        <div class="cta-banner-actions">
+          <a href="#contact" class="btn btn-white" data-wa-action="chat" data-wa-service="general">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-col footer-brand">
+          <a href="#hero" class="brand-logo">
+            <img src="images/logo.jpg" alt="Bluetech Logo" class="brand-logo-img">
+            <span class="brand-text">Blue<span>tech</span></span>
+          </a>
+          <p>
+            We build modern websites, web applications, and digital solutions for growing businesses.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links (No Projects/Work link) -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-us">About Bluetech</a></li>
+            <li><a href="#process">How We Work</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Featured Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#services">MERN Stack Development</a></li>
+            <li><a href="#services">Web Designing & UI/UX</a></li>
+            <li><a href="#services">QuickBooks Integration</a></li>
+            <li><a href="#services">Custom Web Development</a></li>
+            <li><a href="#services">API & Database Design</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-items">
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <span>+92 300 1234567</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>hello@bluetech.com</span>
+            </li>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <span>Karachi, Pakistan</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bluetech. All rights reserved.</p>
+        <span class="footer-tagline">Hire. Train. Grow. &bull; Together We Grow.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Bluetech Assistant & WhatsApp Floating Widget
+       ========================================================================== -->
+  <div class="whatsapp-widget-container">
+    <!-- Chat Popup -->
+    <div class="wa-chat-popup" id="waChatPopup">
+      <!-- Widget Header -->
+      <div class="wa-chat-header">
+        <div class="wa-header-profile">
+          <img src="images/logo.jpg" alt="Bluetech" class="wa-avatar">
+          <div class="wa-header-info">
+            <h5>Bluetech Assistant</h5>
+            <span><span class="wa-status-dot"></span> Powered by Gemini AI &bull; Online</span>
+          </div>
+        </div>
+        <button class="wa-close-btn" id="waCloseBtn" aria-label="Close Chat">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <!-- Mode Switcher Tabs -->
+      <div class="widget-tabs">
+        <button class="widget-tab-btn active" id="tabAiBtn">
+          <i class="fas fa-robot"></i> AI Consultant
+        </button>
+        <button class="widget-tab-btn" id="tabWaBtn">
+          <i class="fab fa-whatsapp"></i> WhatsApp Direct
+        </button>
+      </div>
+
+      <!-- Panel 1: Gemini AI Chat -->
+      <div class="widget-panel active" id="panelAi">
+        <div class="ai-chat-body" id="aiChatBody">
+          <div class="chat-bubble bot">
+            <div class="chat-bubble-sender"><i class="fas fa-robot"></i> Bluetech AI</div>
+            <div>
+              Hello! Welcome to <strong>Bluetech</strong> 👋<br>
+              I am your AI consultant powered by Google Gemini. How may I assist you with your <strong>MERN stack project</strong>, <strong>QuickBooks setup</strong>, or <strong>web design</strong> today?
+            </div>
+            <div class="ai-suggestions" style="margin-top: 10px;">
+              <span class="ai-chip" data-prompt="What services do you offer with MERN stack?">💻 MERN Stack</span>
+              <span class="ai-chip" data-prompt="How do you integrate and automate QuickBooks?">📊 QuickBooks Sync</span>
+              <span class="ai-chip" data-prompt="Can you describe your UI/UX web design process?">🎨 Web Design</span>
+              <span class="ai-chip" data-prompt="How do I get a custom quote and consultation?">💬 Get a Quote</span>
+            </div>
+          </div>
+
+          <!-- Typing Indicator -->
+          <div class="typing-indicator" id="aiTyping">
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+          </div>
+        </div>
+
+        <div class="ai-chat-footer">
+          <input type="text" id="aiChatInput" class="ai-chat-input" placeholder="Ask our AI consultant anything..." autocomplete="off">
+          <button id="aiSendBtn" class="ai-chat-send" aria-label="Send Message">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Panel 2: WhatsApp Direct -->
+      <div class="widget-panel" id="panelWa">
+        <div class="wa-chat-body">
+          <div class="wa-message-bubble">
+            Prefer chatting directly with our engineering lead? Select a topic or type your message below to open WhatsApp:
+          </div>
+
+          <div class="wa-quick-options">
+            <button class="wa-option-btn" data-msg="Hello Bluetech team! I would like to discuss building a web application using the MERN Stack.">
+              <span>💻 MERN Stack Web Apps</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="wa-option-btn" data-msg="Hello Bluetech team! I would like to inquire about modern Web Designing & UI/UX services.">
+              <span>🎨 Web & UI/UX Design</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="wa-option-btn" data-msg="Hello Bluetech team! I would like to consult on QuickBooks integration, automated invoicing, and bookkeeping sync.">
+              <span>📊 QuickBooks Solutions</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="wa-option-btn" data-msg="Hello Bluetech team! I would like to request a custom consultation for my business website.">
+              <span>💬 General Consultation</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="wa-chat-footer">
+          <input type="text" id="waChatInput" class="wa-chat-input" placeholder="Type a message for WhatsApp...">
+          <button id="waSendBtn" class="wa-chat-send" aria-label="Send via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Trigger Bubble -->
+    <button class="wa-trigger-btn" id="waTriggerBtn" aria-label="Open Bluetech Assistant">
+      <span class="wa-pulse-dot"></span>
+      <i class="fab fa-whatsapp"></i>
+    </button>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
